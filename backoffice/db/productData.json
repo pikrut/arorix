@@ -1,0 +1,160 @@
+[
+  {
+    "id": "1713123101109",
+    "name": "Abc Cargo",
+    "stateId": "1",
+    "districtId": "1",
+    "cityId": "295",
+    "subCategoryId": "1712762589773",
+    "description": "<p>Description</p>",
+    "maxAcco": "100",
+    "ac": "0",
+    "acSeats": "1",
+    "parking": "0",
+    "parkingCapacity": "1",
+    "minPrice": "1",
+    "maxPrice": "1",
+    "emailId": "niju@gg.com",
+    "phoneNumber1": "8989899899",
+    "phoneNumber2": "8989899899",
+    "active": "1",
+    "files": []
+  },
+  {
+    "id": "1713128922633",
+    "name": "Pavizham Rice",
+    "stateId": "1",
+    "districtId": "1",
+    "cityId": "295",
+    "subCategoryId": [
+      "1712762589773",
+      "1712762649167"
+    ],
+    "description": "<p>My sub Category</p>",
+    "maxAcco": "1",
+    "ac": "1",
+    "acSeats": "1",
+    "parking": "0",
+    "parkingCapacity": "1",
+    "minPrice": "1",
+    "maxPrice": "1",
+    "emailId": "niju@gg.com",
+    "phoneNumber1": "8989899899",
+    "phoneNumber2": "8989899899",
+    "active": "1",
+    "files": []
+  },
+  {
+    "id": "1713129008405",
+    "name": "SKC Ghee",
+    "stateId": "1",
+    "districtId": "1",
+    "cityId": "297",
+    "subCategoryId": [
+      "1712762589773",
+      "1712762649167"
+    ],
+    "description": "<p>Nice Ghee</p>",
+    "maxAcco": "10",
+    "ac": "1",
+    "acSeats": "2",
+    "parking": "0",
+    "parkingCapacity": "2",
+    "minPrice": "2",
+    "maxPrice": "2",
+    "emailId": "niju@gg.com",
+    "phoneNumber1": "8989899899",
+    "phoneNumber2": "8989899899",
+    "active": "1",
+    "files": [
+      {
+        "filename": "product_297_SKC Ghee_image_1.png",
+        "path": "/Users/nijuthomas/Documents/workspace/aurorix/backoffice/matriods2/product/product_297_SKC Ghee_image_1.png"
+      },
+      {
+        "filename": "product_297_SKC Ghee_image_2.jpeg",
+        "path": "/Users/nijuthomas/Documents/workspace/aurorix/backoffice/matriods2/product/product_297_SKC Ghee_image_2.jpeg"
+      },
+      {
+        "filename": "product_297_SKC Ghee_image_3.jpeg",
+        "path": "/Users/nijuthomas/Documents/workspace/aurorix/backoffice/matriods2/product/product_297_SKC Ghee_image_3.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "1713199185910",
+    "name": "Swarnam Nallenna",
+    "stateId": "1",
+    "districtId": "1",
+    "cityId": "297",
+    "subCategoryId": [
+      "1712762589773",
+      "1712762649167"
+    ],
+    "description": "<p>Testing para</p>",
+    "maxAcco": "1",
+    "ac": "0",
+    "acSeats": "1",
+    "parking": "0",
+    "parkingCapacity": "1",
+    "minPrice": "1",
+    "maxPrice": "1",
+    "emailId": "niju@gg.com",
+    "phoneNumber1": "8989899899",
+    "phoneNumber2": "8989899899",
+    "active": "0",
+    "files": [
+      {
+        "filename": "product_297_Swarnam Nallenna_image_1.png",
+        "path": "matriods2/product/"
+      },
+      {
+        "filename": "product_297_Swarnam Nallenna_image_2.png",
+        "path": "matriods2/product/"
+      },
+      {
+        "filename": "product_297_Swarnam Nallenna_image_3.jpeg",
+        "path": "matriods2/product/"
+      }
+    ]
+  },
+  {
+    "id": "1713201166068",
+    "name": "nirapara sortex rice",
+    "description": "<p>testing</p>",
+    "stateId": "1",
+    "districtId": "2",
+    "cityId": "917",
+    "categoryId": "",
+    "maxAcco": "1",
+    "nonAcSeats": "1",
+    "parking": "1",
+    "phoneNumber1": "8989899899",
+    "phoneNumber2": "8989899899",
+    "active": "1",
+    "files": [
+      {
+        "path": "matriods2/product/",
+        "filename": "product_917_nirapara_sortex_rice_image_1.png",
+        "title": "title1",
+        "description": "descr1"
+      },
+      {
+        "path": "matriods2/product/",
+        "filename": "product_917_nirapara_sortex_rice_image_2.png",
+        "title": "title2",
+        "description": "descr2"
+      },
+      {
+        "path": "matriods2/product/",
+        "filename": "product_917_nirapara_sortex_rice_image_3.jpeg",
+        "title": "title3",
+        "description": "descr3"
+      }
+    ],
+    "subCategoryId": [
+      "1712762589773",
+      "1712762649167"
+    ]
+  }
+]

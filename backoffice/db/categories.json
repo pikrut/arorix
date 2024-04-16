@@ -1,0 +1,89 @@
+[
+  {
+    "id": "1",
+    "name": "Rice",
+    "active": "1"
+  },
+  {
+    "id": "2",
+    "name": "Breakfast Flours",
+    "active": "1"
+  },
+  {
+    "id": "3",
+    "name": "Pulses & Dal",
+    "active": "1"
+  },
+  {
+    "id": "4",
+    "name": "Grocery",
+    "active": "1"
+  },
+  {
+    "id": "5",
+    "name": "Spices & Masalas",
+    "active": "1"
+  },
+  {
+    "id": "6",
+    "name": "Instant Mixes",
+    "active": "1"
+  },
+  {
+    "id": "7",
+    "name": "Fruits & Vegetables",
+    "active": "1"
+  },
+  {
+    "id": "8",
+    "name": "Snacks & Sweets",
+    "active": "1"
+  },
+  {
+    "id": "9",
+    "name": "Pickles & Chutney",
+    "active": "1"
+  },
+  {
+    "id": "10",
+    "name": "Frozen Foods",
+    "active": "1"
+  },
+  {
+    "id": "11",
+    "name": "Tea & Coffee",
+    "active": "1"
+  },
+  {
+    "id": "12",
+    "name": "Gravy Mixes",
+    "active": "1"
+  },
+  {
+    "id": "13",
+    "name": "Fish & Meat",
+    "active": "1"
+  },
+  {
+    "id": "14",
+    "name": "Cookware",
+    "active": "1"
+  },
+  {
+    "id": "15",
+    "name": "Beauty Shop",
+    "active": "1"
+  },
+  {
+    "id": "16",
+    "name": "Health & Wellness",
+    "active": "1"
+  },
+  {
+    "id": "17",
+    "name": "Home Decor",
+    "active": "1"
+  }
+  
+
+]

@@ -1,0 +1,471 @@
+[
+  {
+    "id": "1",
+    "categoryId": "1",
+    "name": "Matta Rice",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "2",
+    "categoryId": "1",
+    "name": "Basmati Rice",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "3",
+    "categoryId": "1",
+    "name": "Jasmine Rice",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "4",
+    "categoryId": "2",
+    "name": "Wheat Flour",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "5",
+    "categoryId": "2",
+    "name": "Ragi Flour",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "6",
+    "categoryId": "2",
+    "name": "Besan",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "7",
+    "categoryId": "3",
+    "name": "Red Lentils (Masoor Dal)",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "8",
+    "categoryId": "3",
+    "name": "Yellow Lentils (Moong Dal)",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "9",
+    "categoryId": "3",
+    "name": "Split Chickpeas (Chana Dal)",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "10",
+    "categoryId": "4",
+    "name": "Sugar",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "11",
+    "categoryId": "4",
+    "name": "Salt",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "12",
+    "categoryId": "4",
+    "name": "Cooking Oil",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "13",
+    "categoryId": "4",
+    "name": "Flour",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "14",
+    "categoryId": "5",
+    "name": "Turmeric Powder",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "15",
+    "categoryId": "5",
+    "name": "Cumin Powder",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "16",
+    "categoryId": "5",
+    "name": "Coriander Powder",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "17",
+    "categoryId": "5",
+    "name": "Garam Masala",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "18",
+    "categoryId": "6",
+    "name": "Instant Dosa Mix",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "19",
+    "categoryId": "6",
+    "name": "Instant Idli Mix",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "20",
+    "categoryId": "6",
+    "name": "Instant Upma Mix",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "21",
+    "categoryId": "6",
+    "name": "Instant Poha Mix",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "22",
+    "categoryId": "7",
+    "name": "Apples",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "23",
+    "categoryId": "7",
+    "name": "Bananas",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "24",
+    "categoryId": "7",
+    "name": "Oranges",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "25",
+    "categoryId": "7",
+    "name": "Carrots",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "26",
+    "categoryId": "7",
+    "name": "Tomatoes",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "27",
+    "categoryId": "7",
+    "name": "Spinach",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "28",
+    "categoryId": "8",
+    "name": "Chips",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "29",
+    "categoryId": "8",
+    "name": "Cookies",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "30",
+    "categoryId": "8",
+    "name": "Chocolate",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "31",
+    "categoryId": "8",
+    "name": "Candies",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "32",
+    "categoryId": "8",
+    "name": "Sweets",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "33",
+    "categoryId": "8",
+    "name": "Popcorn",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "34",
+    "categoryId": "9",
+    "name": "Mango Pickle",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "35",
+    "categoryId": "9",
+    "name": "Lime Pickle",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "36",
+    "categoryId": "9",
+    "name": "Mixed Pickle",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "37",
+    "categoryId": "9",
+    "name": "Garlic Pickle",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "38",
+    "categoryId": "9",
+    "name": "Mango Chutney",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "39",
+    "categoryId": "9",
+    "name": "Tomato Chutney",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "40",
+    "categoryId": "10",
+    "name": "Frozen Vegetables",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "41",
+    "categoryId": "10",
+    "name": "Frozen Fruits",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "42",
+    "categoryId": "10",
+    "name": "Frozen Pizza",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "43",
+    "categoryId": "10",
+    "name": "Frozen Desserts",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "44",
+    "categoryId": "11",
+    "name": "Black Tea",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "45",
+    "categoryId": "11",
+    "name": "Green Tea",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "46",
+    "categoryId": "11",
+    "name": "Herbal Tea",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "47",
+    "categoryId": "11",
+    "name": "Coffee Beans",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "48",
+    "categoryId": "12",
+    "name": "Curry Mix",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "49",
+    "categoryId": "12",
+    "name": "Masala Mix",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "50",
+    "categoryId": "12",
+    "name": "Soup Mix",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "51",
+    "categoryId": "12",
+    "name": "Gravy Mix",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "52",
+    "categoryId": "13",
+    "name": "Fish",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "53",
+    "categoryId": "13",
+    "name": "Prawns",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "54",
+    "categoryId": "13",
+    "name": "Crabs",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "55",
+    "categoryId": "13",
+    "name": "Chicken",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "56",
+    "categoryId": "14",
+    "name": "Pots & Pans",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "57",
+    "categoryId": "14",
+    "name": "Cooking Utensils",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "58",
+    "categoryId": "14",
+    "name": "Bakeware",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "59",
+    "categoryId": "14",
+    "name": "Kitchen Appliances",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "60",
+    "categoryId": "15",
+    "name": "Skincare",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "61",
+    "categoryId": "15",
+    "name": "Haircare",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "62",
+    "categoryId": "15",
+    "name": "Makeup",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "63",
+    "categoryId": "15",
+    "name": "Fragrances",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "64",
+    "categoryId": "16",
+    "name": "Vitamins & Supplements",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "65",
+    "categoryId": "16",
+    "name": "Fitness & Exercise",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "66",
+    "categoryId": "16",
+    "name": "Personal Care",
+    "active": "1",
+    "status": 1
+  },
+  {
+    "id": "67",
+    "categoryId": "16",
+    "name": "Healthcare Devices",
+    "active": "1",
+    "status": 1
+  }
+]
