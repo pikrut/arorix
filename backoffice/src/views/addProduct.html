@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+{{> header}}
+
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      {{> filterDropdowns this}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-2">
+      {{> leftMenu this}}
+    </div>
+    <div class="col-10">
+      <div class="row">
+        <div class="col-10">
+          <h3>{{name}} Product</h3>
+        </div>
+      </div>
+      <form class="bd-example needs-validation" action={{filter.action}} method="post" enctype="multipart/form-data" novalidate>
+
+        <div class="row mb-3">
+          <label for="productName2" class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-10  has-validation">
+            <input type="text"  class="form-control" name="name" id="productName2" value="{{product.name}}"required>
+            <div class="invalid-feedback">
+              Please Enter a valid value.
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="stateSelect" class="col-sm-2 col-form-label">State</label>
+          <div class="col-sm-10  has-validation">
+            <select class="form-select" aria-label="Default select example" id="stateSelect" name="stateId" required>
+              <option selected value="">Please select the state</option>
+              {{#stateList}}
+              <option value="{{id}}" {{#ifEquals id ../product.stateId}}Selected{{/ifEquals}}>{{name}}</option>
+              {{/stateList}}
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid value.
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="districtSelect" class="col-sm-2 col-form-label">District</label>
+          <div class="col-sm-10  has-validation">
+            <select class="form-select" aria-label="Default select example" id="districtSelect" name="districtId" required>
+              <option selected value="">Please select the District</option>
+              {{#districtList}}
+                <option value="{{id}}" {{#ifEquals id ../product.districtId}}Selected{{/ifEquals}}>{{name}}</option>
+              {{/districtList}}
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid value.
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="citySelect" class="col-sm-2 col-form-label">City</label>
+          <div class="col-sm-10  has-validation">
+            <select class="form-select" aria-label="Default select example" id="citySelect" name="cityId" required>
+              <option selected value="">Please select the City</option>
+              {{#cityList}}
+                <option value="{{id}}" {{#ifEquals id ../product.cityId}}Selected{{/ifEquals}}>{{name}}</option>
+              {{/cityList}}
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid value.
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="productName2" class="col-sm-2 col-form-label">Sub Categories</label>
+          <div class="col-sm-10  has-validation options">
+
+            {{#subCategoryList}}
+              <input type="checkbox" name="subCategoryId" value="{{id}}" class="me-2" {{#if selected}}checked{{/if}} required>{{name}}</input>
+            {{/subCategoryList}}
+
+            <div class="invalid-feedback">
+              Please Enter a valid value.
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="description" class="col-sm-2 col-form-label">Description</label>
+          <div class="col-sm-10  has-validation">
+           <textarea type="text" rows="4" id="description" placeholder="description" class="form-control"
+                      autocomplete="off" name="description">{{product.description}}</textarea>
+            <div class="invalid-feedback">
+              Please Enter a valid value.
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row mb-3">
+          <label for="productSeatMaxCapacity" class="col-sm-2 col-form-label">Seat Capacity</label>
+          <div class="col-sm-10  has-validation">
+            <input type="number"  class="form-control" name="maxAcco" id="productSeatMaxCapacity" value="{{product.maxAcco}}" required>
+            <div class="invalid-feedback">
+              Please Enter a valid value.
+            </div>
+          </div>
+        </div>
+
+
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">AC</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="ac" value="1" id="acRadios1"  {{#if product.ac}}checked{{/if}}>
+              <label class="form-check-label" for="acRadios1">
+                AC
+              </label>
+            </div>
+
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="ac" value="0" id="acRadios2" {{#if product.ac}}{{else}}checked{{/if}}>
+              <label class="form-check-label" for="acRadios2">
+                Non Ac
+              </label>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <div class="row mb-3">
+          <label for="ACSeats" class="col-sm-2 col-form-label">AC Seats</label>
+          <div class="col-sm-10  has-validation">
+            <input type="number"  class="form-control" name="acSeats" id="ACSeats" value="{{product.acSeats}}" required>
+            <div class="invalid-feedback">
+              Please Enter a valid value.
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="nonAcSeats" class="col-sm-2 col-form-label">NonAC Seats</label>
+          <div class="col-sm-10  has-validation">
+            <input type="number"  class="form-control" name="nonAcSeats" id="nonAcSeats" value="{{product.nonAcSeats}}" required>
+            <div class="invalid-feedback">
+              Please Enter a valid value.
+            </div>
+          </div>
+        </div>
+
+
+
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Parking</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="parking" value="1" id="parking1"  {{#if product.parking}}checked{{/if}}>
+              <label class="form-check-label" for="parking1">
+                Parking Yes
+              </label>
+            </div>
+
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="parking" value="0" id="parking2" {{#if product.parking}}{{else}}checked{{/if}}>
+              <label class="form-check-label" for="parking2">
+                Parking No
+              </label>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <div class="row mb-3">
+          <label for="parkingCapacity" class="col-sm-2 col-form-label">Parking Capacity</label>
+          <div class="col-sm-10  has-validation">
+            <input type="number"  class="form-control" name="parkingCapacity" id="parkingCapacity" value="{{product.parkingCapacity}}" required>
+            <div class="invalid-feedback">
+              Please Enter a valid value.
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="minPrice" class="col-sm-2 col-form-label">Min Price</label>
+          <div class="col-sm-10  has-validation">
+            <input type="number"  class="form-control" name="minPrice" id="minPrice" value="{{product.minPrice}}" required>
+            <div class="invalid-feedback">
+              Please Enter a valid value.
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="maxPrice" class="col-sm-2 col-form-label">Max Price</label>
+          <div class="col-sm-10  has-validation">
+            <input type="number"  class="form-control" name="maxPrice" id="maxPrice" value="{{product.maxPrice}}" required>
+            <div class="invalid-feedback">
+              Please Enter a valid value.
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        {{> imageModal this}}
+
+        <div class="row mb-3">
+          <label for="parkingCapacity" class="col-sm-2 col-form-label">Email Id</label>
+          <div class="col-sm-10  has-validation">
+            <input type="emailId"  class="form-control" name="emailId" id="emailId" value="{{product.emailId}}" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <div class="invalid-feedback">
+              Please Enter a valid value.
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="phoneNumber1" class="col-sm-2 col-form-label">Primary Number</label>
+          <div class="col-sm-5  has-validation">
+            <input type="text"  class="form-control" name="phoneNumber1" id="phoneNumber1" value="{{product.phoneNumber1}}" pattern="((\+*)((0[ -]*)*|((91 )*))((\d{12})+|(\d{10})+))|\d{5}([- ]*)\d{6}" required>
+            <div class="invalid-feedback">
+              Please Enter a valid value.
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label for="phoneNumber2" class="col-sm-2 col-form-label">Secondary Number</label>
+          <div class="col-sm-5  has-validation">
+            <input type="text"  class="form-control" name="phoneNumber2" id="phoneNumber2" value="{{product.phoneNumber2}}" pattern="((\+*)((0[ -]*)*|((91 )*))((\d{12})+|(\d{10})+))|\d{5}([- ]*)\d{6}">
+            <div class="invalid-feedback">
+              Please Enter a valid value.
+            </div>
+          </div>
+        </div>
+
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Status</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="active" value="1" id="gridRadios1"  {{#if product.active}}checked{{/if}}>
+              <label class="form-check-label" for="gridRadios1">
+                Active
+              </label>
+            </div>
+
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="active" value="0" id="gridRadios2" {{#if product.active}}{{else}}checked{{/if}}>
+              <label class="form-check-label" for="gridRadios2">
+                Inactive
+              </label>
+            </div>
+
+          </div>
+        </fieldset>
+        <input type="hidden" name="categoryId" value="{{product.categoryId}}"/>
+        <input type="hidden" name="id" value="{{product.id}}">
+        <div class="col-12">
+          <button class="btn btn-primary mb-5" type="submit">Submit form</button>
+        </div>
+
+
+      </form>
+
+
+
+    </div>
+  </div>
+</div>
+{{> footer this}}
+</body>
+</html>

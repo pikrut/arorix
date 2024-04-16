@@ -1,0 +1,57 @@
+
+<div class="row mb-3">
+  <label class="col-sm-2 col-form-label">Images</label>
+  <div class="col-sm-10  has-validation">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Images
+    </button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            {{#fileList}}
+            <div class="row mb-3">
+              <div class="col-sm-7  has-validation">
+                <input type="file"  class="form-control imagefile" index="{{@index}}" component="{{../component}}" imageElem="Image{{@index}}" value="{{filename}}" name="image" id="fileImage{{@index}}" >
+                <input type="hidden"   value="{{filename}}" imageElem="{{component}}" name="inputImage" id="inputImage{{@index}}" >
+                <div class="invalid-feedback">
+                  Please Enter a valid file type.
+                </div>
+
+                <label for="titleImage{{@index}}" class="col-sm-2 col-form-label">Title</label>
+                <div class="col-sm-12 ">
+                  <input type="text"  class="form-control" name="imageTitle" value="{{title}}" id="titleImage{{@index}}">
+
+                </div>
+
+                <label for="descImage{{@index}}" class="col-sm-2 col-form-label">Description</label>
+                <div class="col-sm-12 ">
+                  <input type="text"  class="form-control" name="imageDesc" value="{{description}}" id="descImage{{@index}}">
+                </div>
+              </div>
+              <div class="col-sm-5" style="height: 130px; width: 60px;">
+                <img width="130" height="130" id="displayImage{{@index}}" src="{{path}}{{filename}}" alt="" />
+
+                <div class="col-sm-3 float-end mt-3">
+                  <button type="button" class="btn btn-danger mt-2 deleteImage" imageElem="Image{{@index}}" id="deleteImage{{@index}}" >Remove</button>
+                </div>
+              </div>
+            </div>
+            {{/fileList}}
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

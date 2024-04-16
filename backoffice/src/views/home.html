@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+{{> header}}
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            {{> filterDropdowns this}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2">
+                {{> leftMenu this}}
+            </div>
+            <div class="col-10">
+                <div style="height: 62px;"></div>
+                <div class="main-content" id="panel">
+                    <!-- Top nav -->
+
+                    <!-- Top nav -->
+                    <div class="container admin mt-3">
+                        <div class="container-fluid">
+
+
+                        </div>
+
+                        <div class="row mt-3">
+
+                            <!-- //first column -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="container">
+                                            <img style="max-width: 125px;" class="img-fluid rounded-circle" src="../assets/images/user.png" alt="user.png">
+                                        </div>
+
+                                        <h1>1</h1>
+                                        <h1>Users</h1>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- //second column -->
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="container">
+                                            <img style="max-width: 125px;" class="img-fluid rounded-circle" src="../assets/images/category.png" alt="user.png">
+
+                                        </div>
+                                        <h1>1</h1>
+                                        <h1>Categories</h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- //third column  -->
+                            <div class="col-md-4">
+
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <div class="container">
+                                            <img style="max-width: 125px;" class="img-fluid rounded-circle" src="../assets/images/product.png" alt="user.png">
+
+                                        </div>
+                                        <h1>0</h1>
+                                        <h1>Vendors</h1>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <!-- second row -->
+                        <div class="row mt-3">
+                            <!-- first column -->
+                            <div class="col-md-6">
+                                <div class="card" data-toggle="modal" data-target="#add-category-modal">
+                                    <div class="card-body text-center ">
+                                        <div class="container">
+                                            <img style="max-width: 125px;" class="img-fluid rounded-circle" src="../assets/images/keys.png" alt="user.png">
+                                        </div>
+                                        <p class="mt-2">Click here to add new category</p>
+                                        <h1>Add Categories</h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- second column -->
+                            <div class="col-md-6">
+                                <div class="card" data-toggle="modal" data-target="#add-product-modal">
+                                    <div class="card-body text-center">
+                                        <div class="container">
+                                            <img style="max-width: 125px;" class="img-fluid rounded-circle" src="../assets/images/add.png" alt="user.png">
+                                        </div>
+                                        <p class="mt-2">Click here to add new vendors</p>
+                                        <h1>Add Vendors</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{> footer this}}
+</body>
+</html>

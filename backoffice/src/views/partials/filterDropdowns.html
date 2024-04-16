@@ -1,0 +1,54 @@
+<header class="p-2 text-bg-light">
+  <div class="d-flex flex-wrap align-items-center  justify-content-end">
+
+				  {{#if filter.addNew}}
+					<a href="{{filter.action}}"  class="btn btn-primary me-2" role="button">Add New</a>
+				  {{/if}}
+	  			  {{#if filter.state}}
+					<form class="col-12 col-lg-auto float-end" role="filter" id="stateFilterForm" method="get">
+
+						 <select class="form-select" aria-label="Default select example" name="stateId" id="stateFilter" required>
+						  <option value="">Filter By State</option>
+						{{#stateList}}
+							 <option value="{{id}}" {{#ifEquals id ../stateId}}Selected{{/ifEquals}}>{{name}}</option>
+						{{/stateList}}
+						 </select>
+					</form>
+	  			  {{/if}}
+	  			  {{#if filter.district}}
+					<form class="col-12 col-lg-auto float-end" role="filter" id="districtFilterForm" method="get">
+
+						 <select class="form-select" aria-label="Default select example" name="districtId" id="districtFilter" onchange="callCity()" required>
+						  <option value="">Filter By District</option>
+						  {{#districtList}}
+							 <option value="{{id}}" {{#ifEquals id ../districtId}}Selected{{/ifEquals}}>{{name}}</option>
+						  {{/districtList}}
+						</select>
+					</form>
+	  			  {{/if}}
+
+				  {{#if filter.category}}
+				  <form class="col-12 col-lg-auto float-end" role="filter" id="categoryFilterForm" method="get">
+
+					  <select class="form-select" aria-label="Default select example" name="categoryId" id="categoryFilter" required>
+						  <option value="">Filter By Category</option>
+						  {{#categoryList}}
+						  	<option value="{{id}}" {{#ifEquals id ../categoryId}}Selected{{/ifEquals}}>{{name}}</option>
+						  {{/categoryList}}
+					  </select>
+				  </form>
+				  {{/if}}
+
+	  {{#if filter.tourism}}
+	  <form class="col-12 col-lg-auto float-end" role="filter" id="tourismFilterForm" method="get">
+
+		  <select class="form-select" aria-label="Default select example" name="category" id="tourismFilter" required>
+			  <option value="">Filter By Category</option>
+			  {{#categoryList}}
+			  <option value="{{name}}" {{#ifEquals name ../category}}Selected{{/ifEquals}}>{{name}}</option>
+			  {{/categoryList}}
+		  </select>
+	  </form>
+	  {{/if}}
+  </div>
+</header>

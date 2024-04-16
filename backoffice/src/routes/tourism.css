@@ -1,0 +1,59 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url('http://localhost:8080/images/frontend/tourism/Tea-Plant.jpeg');
+            background-size: cover;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+            color: black;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #search-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('http://localhost:8080/fonts/Nunito-400-5.1a48b70f.woff2') format('woff2'),
+            url('http://localhost:8080/fonts/Paytone_One-400-23.168c5fc9.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'CustomFont', sans-serif;
+        }

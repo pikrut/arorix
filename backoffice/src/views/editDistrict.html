@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+{{> header}}
+
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="row">
+      <div class="col-12">
+        {{> filterDropdowns this}}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-2">
+      {{> leftMenu this}}
+    </div>
+    <div class="col-10">
+      <div class="row">
+        <div class="col-10">
+          <h3>{{name}} District</h3>
+        </div>
+      </div>
+      <form class="bd-example needs-validation" action={{filter.action}} method="post" novalidate>
+
+
+        <div class="row mb-3">
+          <label for="districtName2" class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-10  has-validation">
+            <input type="text"  class="form-control" name="name" id="districtName2" value="{{district.name}}" required>
+            <div class="invalid-feedback">
+              Please Enter a valid value.
+            </div>
+          </div>
+        </div>
+
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Status</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="active" value="1" id="gridRadios1"  {{#if district.active}}checked{{/if}}>
+              <label class="form-check-label" for="gridRadios1">
+                Active
+              </label>
+            </div>
+
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="active" value="0" id="gridRadios2" {{#if district.active}}{{else}}checked{{/if}}>
+              <label class="form-check-label" for="gridRadios2">
+                Inactive
+              </label>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">{{name}} District</button>
+        </div>
+        <input type="hidden" name="id" value="{{district.id}}">
+      </form>
+
+
+
+    </div>
+  </div>
+</div>
+{{> footer this}}
+</body>
+</html>

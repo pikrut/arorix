@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- partial -->
+{{> header}}
+
+<body class="bg-gray-400 leading-normal tracking-normal">
+
+    <!-- partial -->
+    {{> nav}}
+
+    <div class="mx-auto bg-white mt-24 md:mt-16 h-screen">
+    </div>
+
+</body>
+
+<script nonce="{{nonce}}">
+    console.log("CSP: example of inline script using a cryptographic nonce")
+</script>
+{{> footer}}
+</html>
